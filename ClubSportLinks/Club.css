@@ -1,5 +1,7 @@
 
-
+body{
+    background-color: #141414;
+}
 /* Navbar */
 *{
     box-sizing: border-box;
@@ -64,7 +66,7 @@
 
 }
 .navbar__links{
-    color: #141414;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +111,7 @@
 .btn::before{
     content: "";
     position: absolute;
-    background-color: yellow;
+    background-color: #d3d614;
     width: 0px;
     height: 0px;
     left: var(--xPos);
@@ -465,6 +467,15 @@
 }
 
  /* Table container styling */
+.info-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .table {
     width: 50%;
     max-width: 100%; 
@@ -478,7 +489,7 @@
 /* Table header styling */
 .table thead {
     background-color: #141414; 
-    color: #141414; 
+    color: #21b803; 
     
 }
 
@@ -563,11 +574,12 @@
 
 }
 /* Image Slider for clubs */
+
 .slider-container{
     width: 50%;
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #1a1a1a;
     display: flex;
@@ -575,14 +587,14 @@
     justify-content: center;
 }
 
-.slider{
+.slider {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     width: 100%;
-    height: 300px;
+    height: 311px;
     position: relative;
 }
-.slider img{
+.slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -648,12 +660,9 @@
 
 .dot.active,
 .dot:hover{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    gap: px;
+    background-color: #717171;
 }
+
 /* Footer CSS */
 
 .footer__container{
